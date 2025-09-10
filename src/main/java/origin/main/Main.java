@@ -3,13 +3,12 @@ package origin.main;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
 
 public class Main {
 
     public static void main(String[] args){
         System.out.println("Logs:");
-    ServerSocket serverSocket = null;
+    ServerSocket serverSocket;
     Socket clientSocket = null;
     int port = 9092;
     try{
